@@ -1,8 +1,20 @@
+<!-- Change from step 3-4 -->
+{% extends "layout.html" %}
+{% block content %}
+<span class="message">{{ message }}</span>{{ content }}
+{% endblock %}
+
+<!-- For steps 3-3 and earlier 
 <html>
     <head>
         <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
     </head>
     <body>
-        <strong>{{ message }}</strong>{{ content }}
+        {# Added for tutorial step 3-3 #}
+        <div><a href="about">About</a></div>                
+        <span class="message">{{ message }}</span>{{ content }}
     </body>
 </html>
+-->

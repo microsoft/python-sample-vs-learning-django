@@ -28,3 +28,15 @@ def index(request):
             'content' : " on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )
+
+# Code for step 3-3
+
+def about(request):
+    return render(
+        request,
+        "about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )

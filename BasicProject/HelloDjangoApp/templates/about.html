@@ -1,0 +1,27 @@
+﻿<!-- Change from step 3-4 -->
+{% extends "layout.html" %}
+{% block content %}
+{{ content }}
+{% endblock %}
+
+<!-- Code for steps 3-3 and earlier
+<html>
+    <head>
+        <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+    </head>
+    <body>
+        {# Original link #}
+        {#<div><a href="home">Home</a></div>#}
+
+        {# This link doesn't work because no pattern matches "index" #}
+        {#<div><a href="index">Home</a></div>#}
+
+        {# Alternate link using the url tag #}
+        <div><a href="{% url 'index' %}">Home</a></div>
+
+        {{ content }}
+    </body>
+</html>
+-->
