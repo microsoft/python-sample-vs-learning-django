@@ -12,9 +12,6 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
-# Python virtual environment
-env/
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -283,6 +280,12 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/BasicProject/env
+/DjangoWeb/env
+/DjangoPolls/env
+
+# Can use an entry like this for any Python virtual environment named "env"
+env/
 
 # Cake - Uncomment if you are using it
 # tools/**
