@@ -45,9 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="HelloDjangoApp\static\site.css" />
-    <Content Include="HelloDjangoApp\templates\about.html" />
-    <Content Include="HelloDjangoApp\templates\index.html" />
-    <Content Include="HelloDjangoApp\templates\layout.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\about.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\index.html" />
+    <Content Include="HelloDjangoApp\templates\HelloDjangoApp\layout.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +56,7 @@
     <Folder Include="HelloDjangoApp\migrations\" />
     <Folder Include="HelloDjangoApp\static\" />
     <Folder Include="HelloDjangoApp\templates\" />
+    <Folder Include="HelloDjangoApp\templates\HelloDjangoApp\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
