@@ -1,34 +1,40 @@
 .message {
     font-weight: 600;
+    font-size: 20px;
     color: blue;
 }
 
+.content {
+    font-size: 20px;
+    color: blue;
+}
 /* Code for step 3-4*/
 
 .navbar {
-    background-color: lightslategray;
-    font-size: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-    padding: 8px 5px 8px 5px;
+  overflow: hidden;
+  background-color: #333;
 }
 
-    .navbar a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-.navbar-brand {
-    font-size: 1.2em;
-    font-weight: 600;
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.navbar-item {
-    font-variant: small-caps;
-    margin-left: 30px;
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 .body-content {
     padding: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
