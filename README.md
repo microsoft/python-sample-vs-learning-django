@@ -12,13 +12,13 @@ Learn Python and Django using Microsoft Visual Studio for Windows!
 This repo contains three folders, the solutions to the Django tutorials that Microsoft offers ([docs.microsoft.com/visualstudio/python](docs.microsoft.com/visualstudio/python))
 
 ### Get started with the Django web framework in Visual Studio
-Follow the [tutorial](https://docs.microsoft.com/en-us/visualstudio/python/learn-django-in-visual-studio-step-01-project-and-solution?view=vs-2017) and then you can check your answers/get unstuck in the [solutions](../blob/master/BasicProject). These files should get you through steps 1-3.
+Follow the [tutorial](https://docs.microsoft.com/visualstudio/python/learn-django-in-visual-studio-step-01-project-and-solution?view=vs-2017) and then you can check your answers/get unstuck in the [solutions](../blob/master/BasicProject). These files should get you through steps 1-3.
 
 ### Use the full Django Web Project template
-Once again, follow the [tutorial](https://docs.microsoft.com/en-us/visualstudio/python/learn-django-in-visual-studio-step-04-full-django-project-template?view=vs-2017) and check your work with the [solutions](../blob/master/DjangoWeb). These files should get you through steps 4 and 5. 
+Once again, follow the [tutorial](https://docs.microsoft.com/visualstudio/python/learn-django-in-visual-studio-step-04-full-django-project-template?view=vs-2017) and check your work with the [solutions](../blob/master/DjangoWeb). These files should get you through steps 4 and 5. 
 
 ### Use the Polls Django Web Project template
-Finally, follow the [tutorial](https://docs.microsoft.com/en-us/visualstudio/python/learn-django-in-visual-studio-step-06-polls-django-web-project-template?view=vs-2017) and check your work with the [solutions](../blob/master/DjangoPolls). This finishes off the Django tutorials that Microsoft offers. Good job!
+Finally, follow the [tutorial](https://docs.microsoft.com/visualstudio/python/learn-django-in-visual-studio-step-06-polls-django-web-project-template?view=vs-2017) and check your work with the [solutions](../blob/master/DjangoPolls). This finishes off the Django tutorials that Microsoft offers. Good job!
 
 # Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
