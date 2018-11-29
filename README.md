@@ -11,7 +11,7 @@ Learn Python and Django using Microsoft Visual Studio for Windows!
 
 ## Let's Learn!
 
-This repo contains three folders, the solutions to the Django tutorials that Microsoft offers ([https://docs.microsoft.com/visualstudio/python](https://docs.microsoft.com/visualstudio/python))
+This repo contains three folders, the solutions to the Django tutorials that Microsoft offers ([docs.microsoft.com/visualstudio/python](https://docs.microsoft.com/visualstudio/python))
 
 ### Get started with the Django web framework in Visual Studio
 
