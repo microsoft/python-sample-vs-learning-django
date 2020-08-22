@@ -5,7 +5,7 @@ Learn Python and Django using Microsoft Visual Studio for Windows!
 
 ## Install
 
-* Visual Studio does not support python for MacOS or Linux. You can instead use an [extention](https://code.visualstudio.com/docs/languages/python) for Visual Basic Code
+* Visual Studio does not support python for MacOS or Linux. You can instead use an [extension](https://code.visualstudio.com/docs/languages/python) for Visual Basic Code
 * To install python on Windows: [VB 2017](https://docs.microsoft.com/en-us/visualstudio/python/installing-python-support-in-visual-studio?view=vs-2017#visual-studio-2017), [VB 2015](https://docs.microsoft.com/en-us/visualstudio/python/installing-python-support-in-visual-studio?view=vs-2017#visual-studio-2015), or [VB 2013 and Earlier](https://docs.microsoft.com/en-us/visualstudio/python/installing-python-support-in-visual-studio?view=vs-2017#visual-studio-2013-and-earlier)
 * To test if everything worked, press ```alt + I``` to open the Python Interactive window, and then entering ```2 + 2```. You should see the output of ```4```.
 
