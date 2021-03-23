@@ -1,11 +1,24 @@
-"""
-Definition of urls for DjangoPolls.
-"""
+"""DjangoPolls URL Configuration
 
-from datetime import datetime
-from django.conf.urls import url, include
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+import django.contrib
 from django.contrib import admin
-import django.contrib.auth.views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.auth import views as auth_views
+from django.urls import path, include
+from datetime import datetime
 
 import app.forms
 import app.views
@@ -13,14 +26,14 @@ import app.views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^', include('app.urls', namespace="app")),
-    url(r'^contact$', app.views.contact, name='contact'),
-    url(r'^about$', app.views.about, name='about'),
-    url(r'^seed$', app.views.seed, name='seed'),
-    url(r'^login/$',
-        django.contrib.auth.views.login,
+    path('', include('app.urls', namespace="app")),
+    path('contact', app.views.contact, name='contact'),
+    path('about', app.views.about, name='about'),
+    path('seed', app.views.seed, name='seed'),
+    path('login/',
+        auth_views.LoginView.as_view(),
         {
-            'template_name': 'app/login.html',
+            'template_name': 'registration/login.html',
             'authentication_form': app.forms.BootstrapAuthenticationForm,
             'extra_context':
             {
@@ -29,16 +42,19 @@ urlpatterns = [
             }
         },
         name='login'),
-    url(r'^logout$',
-        django.contrib.auth.views.logout,
+    path('logout',
+        auth_views.LogoutView.as_view(),
         {
-            'next_page': '/',
+            'template_name': 'registration/loggedoff.html',
+            # 'next_page': '/',
         },
         name='logout'),
 
-    # The admin/doc line below enables admin documentation, which is
-    # provided through the docutils library (see requirements.txt).
-    url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    # Uncomment the admin/doc line below to enable admin documentation:
+    path('admin/doc/', include('django.contrib.admindocs.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
+    # Uncomment the next line to enable the admin:
+    path('admin/', admin.site.urls)
 ]
+
+urlpatterns += staticfiles_urlpatterns()

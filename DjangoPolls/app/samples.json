@@ -20,10 +20,10 @@
         ]
     },
     {
-        "text": "Have you tried R Tools for Visual Studio?",
+        "text": "Have you tried Python in Visual Studio?",
         "choices": [
-            "No, I do not use R",
-            "No, but I use/have used R",
+            "No, I do not use Python",
+            "No, but I use/have used Python",
             "Yes, I have used it",
             "Yes, I use it frequently"
         ]

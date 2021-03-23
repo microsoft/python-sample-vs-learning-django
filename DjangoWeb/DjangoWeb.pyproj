@@ -39,6 +39,7 @@
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="DjangoWeb\__init__.py" />
+    <Compile Include="DjangoWeb\asgi.py" />
     <Compile Include="DjangoWeb\settings.py" />
     <Compile Include="DjangoWeb\urls.py" />
     <Compile Include="DjangoWeb\wsgi.py" />
@@ -53,6 +54,7 @@
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
+    <Folder Include="app\templates\registration\" />
     <Folder Include="DjangoWeb\" />
   </ItemGroup>
   <ItemGroup>
