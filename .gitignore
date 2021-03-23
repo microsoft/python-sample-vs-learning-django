@@ -281,8 +281,17 @@ paket-files/
 __pycache__/
 *.pyc
 /BasicProject/env
+/BasicProject/.env
+/BasicProject/venv
+/BasicProject/.venv
 /DjangoWeb/env
+/DjangoWeb/.env
+/DjangoWeb/venv
+/DjangoWeb/.venv
 /DjangoPolls/env
+/DjangoPolls/.env
+/DjangoPolls/venv
+/DjangoPolls/.venv
 
 # Can use an entry like this for any Python virtual environment named "env"
 env/
