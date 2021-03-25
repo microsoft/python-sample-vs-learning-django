@@ -9,7 +9,7 @@ class Poll(models.Model):
     """A poll object for use in the application views and repository."""
     text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
-    author = models.CharField(max_length=100, blank=True)
+    author = models.CharField(max_length=100, blank=True)    
 
     def total_votes(self):
         """Calculates the total number of votes for this poll."""
@@ -21,9 +21,9 @@ class Poll(models.Model):
 
 class Choice(models.Model):
     """A poll choice object for use in the application views and repository."""
-    poll = models.ForeignKey(Poll)
+    poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
     text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
+    votes = models.IntegerField(default=0)    
 
     def votes_percentage(self):
         """Calculates the percentage of votes for this choice."""

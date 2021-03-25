@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from django.http import HttpResponse  # For tutorial steps 2-1 and 2-2
 from datetime import datetime         # For tutorial step 2-2
 from django.shortcuts import render   # For tutorial step 2-3
