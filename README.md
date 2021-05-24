@@ -1,3 +1,4 @@
+> **Note**: Please be aware that this project has been archived, and is read-only. It is not being maintained and might contain out of date code.
 
 # Learning Django in Microsoft Visual Studio
 
